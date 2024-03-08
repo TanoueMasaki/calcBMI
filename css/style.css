@@ -1,0 +1,45 @@
+#body{
+	width: 20%;
+	height: 500px;
+	display: none;
+}
+h1{
+	padding: 5px 0px 0px 5px;
+	font-family: serif;
+	font-size: 20px;
+}
+
+
+
+/* 画面サイズで変更する場合はココ */
+/* 
+@media (max-width:767px) {
+main div img{
+	margin-top: 55px;
+	width: 100%;
+}
+}
+@media (min-width:768px) {
+	main div img{
+		margin-top: 95px;
+		width: 100%;
+	}
+	} */
+
+/* main {
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 60%;
+}
+
+footer {
+	height: 20%;
+	font-family: serif;
+	font-size: large;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+footer p.copylight{
+	margin: 10% 0 10% 0;
+} */

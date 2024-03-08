@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/functions.js"></script>
+    <title>BMI</title>
+</head>
+<body>
+	<h1>BMI計算と肥満度分類</h1>
+    <form>
+        <a>身長：</a><input type="number" name="height" id="height" placeholder="cmで入力して下さい"><a>cm</a><br>
+        <a>体重：</a><input type="number" name="weight" id="weight" placeholder="入力して下さい"><a>kg</a><br>
+        <input type="button" value="計算" id="btnCalc">
+    </form>
+    <p id="showResult"></p>
+    <p id="standardWeight"></p>
+	<p id="imageMessage"></p>
+	<p id="image"><img id="body" src="" alt="img"></p>
+
+    <p>分類結果は日本肥満学会/JASSOの「表 肥満度分類」を参考にさせて頂いております</p>
+    <a href="http://www.jasso.or.jp/data/magazine/pdf/chart_A.pdf" target="_top">日本肥満学会/JASSO_表 肥満度分類</a><br>
+	<hr>
+	<h2>ここからはソースコードです</h2>
+
+    <script>
+        // functions.jsのcalcBMI()を登録
+        const showResult = function(){
+            calcBMI();
+        }
+        // ボタンが押されたら結果を表示する
+        document.getElementById('btnCalc').addEventListener('click',showResult);
+    </script>
+</body>
+</html>
