@@ -6,25 +6,34 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/functions.js"></script>
-    <title>BMI</title>
+    <title>calcBMI</title>
 </head>
 <body>
-	<h1>BMI計算と肥満度分類</h1>
-    <form>
-        <a>身長：</a><input type="number" name="height" id="height" placeholder="cmで入力して下さい"><a>cm</a><br>
-        <a>体重：</a><input type="number" name="weight" id="weight" placeholder="入力して下さい"><a>kg</a><br>
-        <input type="button" value="計算" id="btnCalc">
-    </form>
-    <p id="showResult"></p>
-    <p id="standardWeight"></p>
-	<p id="imageMessage"></p>
-	<p id="image"><img id="body" src="" alt="img"></p>
+    <header>
+	    <h1>BMI計算と肥満度分類</h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <a>身長(cm):</a><input type="number" name="height" id="height" placeholder="入力して下さい"><br>
+                <a>体重(kg):</a><input type="number" name="weight" id="weight" placeholder="入力して下さい"><br>
+                <input type="button" value="計算" id="btnCalc">
+            </form>
+            <p id="showResult"></p>
+            <p id="standardWeight"></p>
+            <p id="imageMessage"></p>
+            <img id="body" src="" alt="img">
 
-    <p>分類結果は日本肥満学会/JASSOの「表 肥満度分類」を参考にさせて頂いております</p>
-    <a href="http://www.jasso.or.jp/data/magazine/pdf/chart_A.pdf" target="_top">日本肥満学会/JASSO_表 肥満度分類</a><br>
-	<hr>
-	<h2>ここからはソースコードです</h2>
-
+            <p>分類結果は日本肥満学会/JASSOの「表 肥満度分類」を参考にさせて頂いております</p>
+            <p>リンクは↓です</p>
+            <a href="http://www.jasso.or.jp/data/magazine/pdf/chart_A.pdf" target="_top">日本肥満学会/JASSO_表 肥満度分類</a><br>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>ソースコードは↓で公開しています</p>
+        <a href="https://github.com/TanoueMasaki/calcBMI" target="_top">このアプリのGitHubリポジトリ</a>
+    </footer>
     <script>
         // functions.jsのcalcBMI()を登録
         const showResult = function(){

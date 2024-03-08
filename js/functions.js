@@ -51,10 +51,9 @@ function calcBMI(){
       document.getElementById('showResult').textContent = "未入力のデータがあります";
       document.getElementById('showResult').style.color = "red";
   }else{
-      document.getElementById('showResult').style.color = "black";
-      document.getElementById('showResult').textContent = BMI;
-      document.getElementById('standardWeight').textContent = standardWeight;
-      document.getElementById('imageMessage').textContent = `あなたの肥満度分類は${bodyClassification}です`;
+      document.getElementById('showResult').textContent = `BMIは「${BMI}」です`;
+      document.getElementById('standardWeight').textContent = `標準体重は「${standardWeight}kg」です`;
+      document.getElementById('imageMessage').textContent = `あなたの肥満度分類は「${bodyClassification}」です`;
       document.getElementById('body').setAttribute("src",bodyImages[imagesNum]);
       document.getElementById('body').style.width = '20%'
       document.getElementById('body').style.display = 'block'
